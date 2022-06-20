@@ -1,0 +1,352 @@
+/* body */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic", sans-serif;
+}
+
+h1 {
+  Color: #477358;
+  font-family: "Century Gothic", sans-serif;
+}
+
+button {
+  padding: 6px;
+  border-radius: 10px;
+  background-color: silver;
+  margin: 8px;
+  border: none;
+  width: 120px;
+}
+
+/* top navigation */
+nav {
+  border-bottom: 1px solid black;
+}
+
+.topnav {
+  max-width: 1120px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 8px 30px 8px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.topnav .icon {
+  display: none;
+}
+
+/* header */
+header {
+  margin: auto;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1060px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* main */
+.main {
+  flex-grow: 1;
+}
+
+.main-content {
+  max-width: 1060px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  margin-top: auto;
+  height: 100px;
+  border-top: 1px solid black;
+}
+
+.footer-content {
+  max-width: 1060px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+footer i {
+  font-size: 30px;
+  padding: 10px;
+  color: rgb(83, 83, 83);
+}
+
+footer i:hover {
+  color: rgb(142, 170, 153);
+  transition: 0.2s;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(211, 211, 211);
+  border-left: 1px solid #c0c0c0;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(235, 236, 236);
+  border-radius: 4px;
+}
+
+/* responsive sizing */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* sudoku board */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  padding: 10px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td {
+  height: fit-content;
+  width: fit-content;
+  padding: 1px;
+  border: 1px solid grey;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#cell-A3,
+#cell-B3,
+#cell-C3,
+#cell-D3,
+#cell-E3,
+#cell-F3,
+#cell-G3,
+#cell-H3,
+#cell-I3 {
+    border-right: solid 3px;
+}
+
+#cell-A4,
+#cell-B4,
+#cell-C4,
+#cell-D4,
+#cell-E4,
+#cell-F4,
+#cell-G4,
+#cell-H4,
+#cell-I4 {
+    border-left: solid 3px;
+}
+
+#cell-A6,
+#cell-B6,
+#cell-C6,
+#cell-D6,
+#cell-E6,
+#cell-F6,
+#cell-G6,
+#cell-H6,
+#cell-I6 {
+    border-right: solid 3px;
+}
+
+#cell-A7,
+#cell-B7,
+#cell-C7,
+#cell-D7,
+#cell-E7,
+#cell-F7,
+#cell-G7,
+#cell-H7,
+#cell-I7 {
+    border-left: solid 3px;
+}
+
+#cell-C1,
+#cell-C2,
+#cell-C3,
+#cell-C4,
+#cell-C5,
+#cell-C6,
+#cell-C7,
+#cell-C8,
+#cell-C9 {
+    border-bottom: solid 3px;
+}
+
+#cell-D1,
+#cell-D2,
+#cell-D3,
+#cell-D4,
+#cell-D5,
+#cell-D6,
+#cell-D7,
+#cell-D8,
+#cell-D9 {
+    border-top: solid 3px;
+}
+
+#cell-F1,
+#cell-F2,
+#cell-F3,
+#cell-F4,
+#cell-F5,
+#cell-F6,
+#cell-F7,
+#cell-F8,
+#cell-F9 {
+    border-bottom: solid 3px;
+}
+
+#cell-G1,
+#cell-G2,
+#cell-G3,
+#cell-G4,
+#cell-G5,
+#cell-G6,
+#cell-G7,
+#cell-G8,
+#cell-G9 {
+    border-top: solid 3px;
+}
+
+#cell-A9,
+#cell-B9,
+#cell-C9,
+#cell-D9,
+#cell-E9,
+#cell-F9,
+#cell-G9,
+#cell-H9,
+#cell-I9 {
+    border-right: solid 3px;
+}
+
+#cell-A1,
+#cell-B1,
+#cell-C1,
+#cell-D1,
+#cell-E1,
+#cell-F1,
+#cell-G1,
+#cell-H1,
+#cell-I1 {
+    border-left: solid 3px;
+}
+
+#cell-A1,
+#cell-A2,
+#cell-A3,
+#cell-A4,
+#cell-A5,
+#cell-A6,
+#cell-A7,
+#cell-A8,
+#cell-A9 {
+    border-top: solid 3px;
+}
+
+#cell-I1,
+#cell-I2,
+#cell-I3,
+#cell-I4,
+#cell-I5,
+#cell-I6,
+#cell-I7,
+#cell-I8,
+#cell-I9 {
+    border-bottom: solid 3px;
+}
+
+.grid-green input {
+  background-color: #ecf1ed;
+}
+
+#buttons {
+  margin: auto;
+  text-align: center;
+}
+
+.levels {
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+  border: 3px solid black;
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+
+.levelButton {
+  width: 70px;
+  background-color: transparent;
+  color: #477358;
+  font-weight: bold;
+  border: none;
+}
+
+.levelButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.levelButton:active {
+  background-color: white;
+  color: black;
+}

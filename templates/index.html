@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/d4df3ad427.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/styles.css" type="text/css" />
+    <title>Index</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="topnav" id="topnav-container">
+        <a href="#home" id="logo" class="active">alliew.dev</a>
+        <a href="#github">Code <i class="fa-brands fa-github"></i></a>
+        <a href="#contact">Tutorial</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <h1>SudokuPy</h1>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="main-content">
+        <div class="levels">
+          Select a level:<br />
+          <button class="levelButton">Easy</button>&nbsp;&nbsp;<button
+            class="levelButton"
+          >
+            Medium</button
+          >&nbsp;&nbsp;<button class="levelButton">Hard</button><br />
+        </div>
+        <br />
+        Each 3x3 grid must contain the digits 1-9.<br />The numbers can not
+        repeat in any row.<br />
+        <br />
+        <table>
+          <tr>
+            <td id="cell-A1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-A9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_A9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-B1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-B9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_B9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-C1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-C9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_C9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-D1">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D2">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D3">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D4" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D5" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D6" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D7">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D8">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-D9">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_D9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-E1">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E2">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E3">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E4" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E5" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E6" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E7">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E8">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-E9">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_E9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-F1">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F2">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F3">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F4" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F5" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F6" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F7">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F8">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-F9">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_F9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-G1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-G9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_G9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-H1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-H9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_H9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td id="cell-I1" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I1"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I2" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I2"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I3" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I3"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I4">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I4"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I5">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I5"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I6">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I6"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I7" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I7"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I8" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I8"
+                autocomplete="off"
+              />
+            </td>
+            <td id="cell-I9" class="grid-green">
+              <input
+                class="input"
+                type="text"
+                maxlength="1"
+                id="cell_I9"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div id="buttons">
+          <button>Start / Pause</button><button>Solve</button><br />
+          <p>Time: 00:00:00</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <a href="http://github.com/aweiglein" target="_blank"
+          ><i class="fa-brands fa-github social"></i
+        ></a>
+        <a href="http://github.com/aweiglein" target="_blank"
+          ><i class="fa-brands fa-linkedin social"></i
+        ></a>
+        <a href="http://github.com/aweiglein" target="_blank"
+          ><i class="fa-brands fa-twitter social"></i></a
+        ><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        consectetur possimus explicabo quia suscipit quibusdam vel doloremque
+        modi aut nam, adipisci exercitationem, pariatur autem repellat magnam
+        eligendi repudiandae? Laboriosam, laborum.
+      </div>
+    </footer>
+  </body>
+</html>
