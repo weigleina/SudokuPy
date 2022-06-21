@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  Color: #477358;
+  color: #477358;
   font-family: "Century Gothic", sans-serif;
 }
 
@@ -180,7 +180,7 @@ input:focus {
 #cell-G3,
 #cell-H3,
 #cell-I3 {
-    border-right: solid 3px;
+  border-right: solid 3px;
 }
 
 #cell-A4,
@@ -192,7 +192,7 @@ input:focus {
 #cell-G4,
 #cell-H4,
 #cell-I4 {
-    border-left: solid 3px;
+  border-left: solid 3px;
 }
 
 #cell-A6,
@@ -204,7 +204,7 @@ input:focus {
 #cell-G6,
 #cell-H6,
 #cell-I6 {
-    border-right: solid 3px;
+  border-right: solid 3px;
 }
 
 #cell-A7,
@@ -216,7 +216,7 @@ input:focus {
 #cell-G7,
 #cell-H7,
 #cell-I7 {
-    border-left: solid 3px;
+  border-left: solid 3px;
 }
 
 #cell-C1,
@@ -228,7 +228,7 @@ input:focus {
 #cell-C7,
 #cell-C8,
 #cell-C9 {
-    border-bottom: solid 3px;
+  border-bottom: solid 3px;
 }
 
 #cell-D1,
@@ -240,7 +240,7 @@ input:focus {
 #cell-D7,
 #cell-D8,
 #cell-D9 {
-    border-top: solid 3px;
+  border-top: solid 3px;
 }
 
 #cell-F1,
@@ -252,7 +252,7 @@ input:focus {
 #cell-F7,
 #cell-F8,
 #cell-F9 {
-    border-bottom: solid 3px;
+  border-bottom: solid 3px;
 }
 
 #cell-G1,
@@ -264,7 +264,7 @@ input:focus {
 #cell-G7,
 #cell-G8,
 #cell-G9 {
-    border-top: solid 3px;
+  border-top: solid 3px;
 }
 
 #cell-A9,
@@ -276,7 +276,7 @@ input:focus {
 #cell-G9,
 #cell-H9,
 #cell-I9 {
-    border-right: solid 3px;
+  border-right: solid 3px;
 }
 
 #cell-A1,
@@ -288,7 +288,7 @@ input:focus {
 #cell-G1,
 #cell-H1,
 #cell-I1 {
-    border-left: solid 3px;
+  border-left: solid 3px;
 }
 
 #cell-A1,
@@ -300,7 +300,7 @@ input:focus {
 #cell-A7,
 #cell-A8,
 #cell-A9 {
-    border-top: solid 3px;
+  border-top: solid 3px;
 }
 
 #cell-I1,
@@ -312,7 +312,7 @@ input:focus {
 #cell-I7,
 #cell-I8,
 #cell-I9 {
-    border-bottom: solid 3px;
+  border-bottom: solid 3px;
 }
 
 .grid-green input {
@@ -331,6 +331,7 @@ input:focus {
   border: 3px solid black;
   padding-top: 20px;
   padding-bottom: 6px;
+  margin-top: -30px;
 }
 
 .levelButton {

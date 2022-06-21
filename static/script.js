@@ -7,3 +7,11 @@ function openNav() {
       x.className = "topnav";
   }
 }
+
+$(document).ready(function(){
+  $("#dam_return a").click(function(){
+      var value = $(this).html();
+      var input = $('#dam');
+      input.val(value);
+  });
+});
