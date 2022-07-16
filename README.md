@@ -2,7 +2,7 @@
 A Sudoku web app that utilizes a recursive backtracking algorithm to find the optimal solution for any unsolved puzzle.
 
 <p align="center">
-  <img src="demo.gif" />  
+  <img src="sudoku-py.png" />  
 </p>
 
 ---
